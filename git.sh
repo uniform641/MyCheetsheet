@@ -21,3 +21,17 @@ $ git config user.email "***@***.com"
 # global config
 $ git config --global user.name "***"
 $ git config --global user.email "***@***.com" 
+
+#################### git delete ####################
+git clean -fd   # delete untracked files
+git branch -D your_branch   # delete local branch
+
+#################### git revert ####################
+git reset --soft HEAD^  # uncommit and reserve code
+git reset HEAD <file>... # unadd file
+
+#################### git commit ####################
+git commit --amend  # supplementary commit
+
+#################### gerrit ####################
+git push origin HEAD:refs/for/your_branch # first time push need 
